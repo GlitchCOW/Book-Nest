@@ -1,0 +1,113 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Quicksand:wght@400;600&display=swap');
+
+:root{
+    --bg: #f5f0eb;
+    --text: #3e2c1c;
+    --accent: #a67c52;
+    --soft: #e8ded1;
+    --hover: #c1a78e;
+    --shadow: rgba(0, 0, 0, 0.5);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", san-serif;
+}
+body{
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    padding: 20px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--soft-pink);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px var(--shadow);
+    margin-bottom: 2rem;
+}
+.logo{
+    font-family: "Playfair Display", serif;
+    font-size: 1.8rem;
+    color: var(--accent);
+}
+nav a{
+    margin-left: 1.2rem;
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+nav a:hover{
+    color: var(--accent);
+}
+.hero{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.hero h1{
+    font-size: 2.5rem;
+    color: var(--accent);
+}
+.hero p{
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+}
+.search, .genre-select{
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+input, select, button{
+    padding: 0.7rem 1rem;
+    margin: 0.3rem;
+    border: none;
+    font-size: 1rem;
+}
+input, select{
+    background-color: #fff;
+    border: 2px solid var(--soft);
+    color: var(--text);
+}
+button{
+    background-color: var(--accent);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover{
+    background-color: var(--hover);
+}
+.quote {
+    background-color: var(--soft);
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px var(--shadow);
+}
+
+blockquote {
+    font-style: italic;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+cite {
+    font-size: 0.9rem;
+    color: var(--accent);
+}
+
+footer {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #7a6651;
+}
