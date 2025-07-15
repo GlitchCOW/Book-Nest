@@ -142,3 +142,81 @@ footer {
     font-size: 0.9rem;
     color: var(--accent);
 }
+
+/* Page Title */
+.page-title {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    color: var(--accent);
+}
+
+/* Bookshelf Section Wrapper */
+.bookshelf-section {
+    margin-bottom: 3rem;
+    padding: 1.5rem;
+    background-color: var(--soft);
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px var(--shadow);
+}
+
+.bookshelf-section h2 {
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    color: var(--text);
+}
+
+/* Shelf Layout */
+.shelf {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Book Card Styling (Same as results page, reused here) */
+.book-card {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px var(--shadow);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+}
+
+.book-card img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 0.5rem;
+    border-radius: 6px;
+}
+
+.book-card h3 {
+    font-size: 1rem;
+    margin: 0.5rem 0 0.2rem;
+}
+
+.book-card p {
+    font-size: 0.9rem;
+    color: var(--accent);
+}
+
+/* Optional: Move + Remove Buttons */
+.book-card button {
+    margin-top: 0.5rem;
+    padding: 0.4rem 0.7rem;
+    font-size: 0.85rem;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--accent);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.book-card button:hover {
+    background-color: var(--hover);
+}
